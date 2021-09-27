@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Siegebreaker Modification",
+        "sp": 1,
+        "applied_to": ["Cannon","CQB","Launcher","Rifle","Nexus"],
+        "applied_string": "Cannon,CQB,Launcher,Rifle,Nexus",
+        "source": "BIM",
+        "license": "LEVIATHAN",
+        "license_level": 1,
+        "effect": "Choose 1 weapon. When fired against a stationary target--be it a building, wall, bit of cover, or actor that did not move in its last turn--that weapon now deals AP damage. Against buildings, walls, and cover, it additionally deals double damage.",
+        "description": "<i>Specially designed fragmentation rounds, high-energy generator coils, or explosive charges, Siegebreaker Munitions can turn any weapon into a wall-breaker.</i>",
+        "data_type": "mod",
+        "aptitude": {},
+        "tags": [{"id": "tg_mod"}]
+        },
+        {
+          "name": "BI Dragonsbreath Rounds",
+          "sp": 1,
+          "applied_to": ["Cannon","CQB","Launcher","Rifle","Nexus"],
+          "applied_string": "Any weapon with no Burn Damage",
+          "source": "BIM",
+          "license": "SAURUS",
+          "license_level": 1,
+          "effect": "This mod may be applied to any weapon that does not inflict Burn. That weapon does +1 Burn on hit.",
+          "description": "<i>Manipulating a weapon’s payload with techniques that would later be used in the BIM DRACO, the Dragonsbreath Rounds inflict righteous flame on the target.</i>",
+          "data_type": "mod",
+          "aptitude": {},
+          "tags": [{"id": "tg_mod"}]
+        },
+        {
+          "name": "BI Extended Modification",
+          "sp": 2,
+          "applied_to": ["Cannon","CQB","Launcher","Rifle","Nexus"],
+          "applied_string": "Any weapon with less than 3 Threat",
+          "source": "BIM",
+          "license": "SAURUS",
+          "license_level": 1,
+          "effect": "This mod may be applied to any weapon with less than 3 threat. That weapon’s threat is increased by 1.",
+          "description": "<i>Lengthening a blade, reinforcing a weapon’s haft, or shortening a barrel while adding additional rifling--all ways to increase a weapon’s immediate threat range.</i>",
+          "data_type": "mod",
+          "aptitude": {},
+          "tags": [{"id": "tg_mod"}]
+        }
+]

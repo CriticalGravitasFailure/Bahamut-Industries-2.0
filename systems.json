@@ -1,0 +1,363 @@
+[
+    {
+        "name": "Red Dragonling",
+        "type": "Drone",
+        "sp": 2,
+        "tags": [{"id": "tg_drone"},{"id": "tg_quick_action"}],
+        "source": "BIM",
+        "license": "BROODMOTHER",
+        "license_level": 1,
+        "effect": "As a quick action, you may deploy a Red Dragonling drone in any space within your sensor range. An area of burst 3 around that drone is now under the effects of the Extreme Heat combat environment (all weapons or systems that inflict or generate heat inflict or generate 1 additional heat), unless the area already suffers from Extreme Cold, in which case neither environmental effect applies. You may relocate it anywhere within your sensor range as a free action at the end of your turn",
+        "description": "<i>The most basic of the Broodmother’s drones, the Red and Blue Dragonlings are repurposed terraforming tools, meant to manipulate the local environment in the pilot’s favor.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Blue Dragonling",
+        "type": "Drone",
+        "sp": 2,
+        "tags": [{"id": "tg_drone"},{"id": "tg_quick_action"}],
+        "source": "BIM",
+        "license": "BROODMOTHER",
+        "license_level": 1,
+        "effect": "As a quick action, you may deploy a Blue Dragonling drone in any space within your sensor range. An area of burst 3 around that drone is now under the effects of the Extreme Cold combat environment (any actor that does not move or boost during its turn is Immobilized at the end of its turn. It may remove this condition with a quick action and a successful hull save against your save target. All actors are resistant to heat.), unless the area already suffers from Extreme Heat, in which case neither environmental effect applies. You may relocate it anywhere within your sensor range as a free action at the end of your turn",
+        "description": "<i>The most basic of the Broodmother’s drones, the Red and Blue Dragonlings are repurposed terraforming tools, meant to manipulate the local environment in the pilot’s favor.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "White Dragonling",
+        "type": "Drone",
+        "sp": 2,
+        "tags": [{"id": "tg_drone"},{"id": "tg_quick_action"},{"id": "tg_shield"}],
+        "source": "BIM",
+        "license": "BROODMOTHER",
+        "license_level": 2,
+        "effect": "This system fires a turret drone that attaches to any friendly mech or surface square within sensor range. The drone creates a burst 3 area around that ally or chosen square; allied actors within that area (including the ally the drone is following) suffer 1 less damage from all attacks, to a minimum of 1 before armor. If an attack deals multiple types of damage, select one type to be reduced.",
+        "description": "<i>The White Dragonling drone system is a support drone system, designed to intercept incoming fire and to prevent it from damaging the mech blessed with its presence.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Chromatic Dragonling",
+        "type": "Drone",
+        "sp": 3,
+        "tags": [{"id": "tg_drone"},{"id": "tg_quick_action"},{"id": "tg_heat_self","val": "2"}],
+        "source": "BIM",
+        "license": "BROODMOTHER",
+        "license_level": 3,
+        "effect": "You may activate this system as a quick action. When you do, deploy a drone anywhere within sensor range of your mech. This drone produces a burst 5 area around it; all enemy mechs moving into or through the burst must make a Hull save or take 2 kinetic damage and become impaired until the end of their next turn. The drone automatically returns to your mech at the end of your next turn.",
+        "description": "<i>The second of a pair, the Chromatic Dragonling contains Bahamut’s darker impulses; control, desire, and destruction. It shapes the battlefield, a horde of locusts--yet under the right guidance, one that serves good, not evil.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Napalm Wall",
+        "type": "System",
+        "sp": 2,
+        "tags": [{"id": "tg_quick_action"},{"id": "tg_limited","val": "2"}],
+        "source": "BIM",
+        "license": "DRACO",
+        "license_level": 1,
+        "effect": "Create a Line 5 section of flame, 4 spaces high, entirely within Range 10. This flame grants soft cover and does not block line of sight. Characters that start their turn in the area or enter it for the first time on their turn take 2 Heat and 2 Burn. This Napalm Wall lasts until the end of the current scene, and then burns out.",
+        "description": "<i>Napalm Walls can easily be rolled into a portable shape. Deployed by unrolling them and sending a command, wrothful flames powered by ancient technology cut off progress on the field of battle.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Propulsion Vents",
+        "type": "System",
+        "sp": 2,
+        "tags": [{"id": "tg_unique"}],
+        "source": "BIM",
+        "license": "DRACO",
+        "license_level": 2,
+        "effect": "Your mech increases its speed by 1 for every 3 points of Heat it has. As a free action, you may explosively vent built-up heat; clear your heat track and move a number of squares equal to the cleared heat. Doing so destroys this system and inflicts 3 AP energy damage that cannot be reduced by any means.",
+        "description": "<i>By re-routing heat vent units towards the rear of the mech and applying a secretive fuel mixture to the last few inches, excess heat can be used to increase the speed at which a mech may move. By increasing the concentration of this mixture, a burst of speed can be swiftly achieved, though it inevitably wrecks the vents; such is the price of bringing Bahamut’s wroth.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Plasma Charges",
+      "type": "Deployable",
+      "sp": 2,
+      "tags": [{
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "BIM",
+    "license": "DRACO",
+    "license_level": 2,
+    "effect": {
+      "effect_type": "Charge",
+      "charges": [{
+          "name": "Plasma Grenade",
+          "charge_type": "Grenade",
+          "range": [{
+              "type": "Range",
+              "val": 5
+            },
+            {
+              "type": "Blast",
+              "val": 2
+            }
+          ],
+          "detail": " Affected characters must pass an agility save or take 4 Heat, or 2 Heat on a successful save."
+        },
+        {
+          "name": "Plasma Mine",
+          "charge_type": "Mine",
+          "range": [{
+            "type": "Burst",
+            "val": 1
+          }],
+          "detail": "Affected characters must pass an agility save or take 2 heat,  or 1 heat on a passed save. This area remains in play until the end of the triggering character’s next turn, providing soft cover and inflicting 1 heat to anyone who starts their turn in the area or enters it for the first time on their turn."
+        }
+      ]
+    },
+    "description": "A simple thing; fill a mine or grenade with blessed plasma napalm, contained in a magnetic sphere. When containment is breached, a flood of holy fury results, burning away the impure.",
+    "data_type": "system",
+    "aptitude": {}
+    },
+    {
+      "name": "Structural Heat Sinks",
+      "type": "System",
+      "sp": 1,
+      "tags": [{"id": "tg_protocol"}],
+      "source": "BIM",
+      "license": "DRACO",
+      "license_level": 3,
+      "effect": {
+        "name": "EJECT STRUCTURAL SINKS",
+        "effect_type": "Protocol",
+        "detail": "End the Exposed status on your mech and vent all accumulated heat. Reduce your heat capacity by 2, to a minimum of 1, until your next full repair."
+      },
+      "description": "<i>Many parts of a core’s internal structure are quite capable of being used as part of a radiating heat sink system; the issue comes that one must expose them to the environment to use them as such.</i>",
+      "data_type": "system",
+      "aptitude": {}
+    },
+    {
+      "name": "Quantum Microthrusters",
+      "type": "System",
+      "sp": 2,
+      "tags": [{"id": "tg_unique"},{"id": "tg_heat_self","val": 2}],
+      "source": "BIM",
+      "license": "DRAGONFLY",
+      "license_level": 1,
+      "effect": "Whenever your mech Boosts, you may activate this system. Until the start of your next turn, your mech counts as being both in its original square and the square it ended its Boost movement in for all purposes, including being targeted by attacks and how many times you are hit by area of effect attacks.",
+      "description": "<i>Quantum mechanics allow for a surprising amount of togetherness--however, by applying basic paracausal theories, such relationships can be inverted, forcing a separation of units by time and space.</i>",
+      "data_type": "system",
+      "aptitude": {}
+    },
+    {
+      "name": "‘Thunder’ Repair Shunt",
+      "type": "System",
+      "sp": 1,
+      "tags": [{"id": "tg_quick_action"},{"id": "tg_limited","val": 2}],
+      "source": "BIM",
+      "license": "DRAGONFLY",
+      "license_level": 1,
+      "effect": "As a quick action, you may repair one damaged point of structure from an adjacent allied actor.",
+      "description": "<i>The ‘Thunder’ Repair Shunt uses advanced, proprietary nano-robotics (each supposedly engraved with a prayer of healing, so sayeth Bahamut Industries) to perform rapid field repair; not enough to warrant not returning to base, but enough to keep a mech going just a bit longer.</i>",
+      "data_type": "system",
+      "aptitude": {}
+    },
+    {
+      "name": "Deep Tunnel Scanner",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [{"id": "tg_quick_tech"},{"id": "tg_invade"}],
+    "source": "BIM",
+    "license": "DRAGONFLY",
+    "license_level": 2,
+        "effect": {
+      "effect_type": "Tech",
+      "activation": "Quick",
+      "option_set": "Invade",
+      "options": [{
+          "name": "Deep Tunnel Link",
+          "detail": " Until the end of your next turn you and the target are quantum linked. They are considered to be within your sensor range, may not hide from you, and may not benefit from invisibility or cover against you."}]},
+    "description": "Making use of advanced quantum tunnelling, the Deep Tunnel Scanner links the user and it’s target in such a way that they are always next to each other--in spirit, anyway.",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Hull-Link Protocol",
+    "type": "System",
+    "sp": 3,
+    "tags": [{"id": "tg_protocol"},{"id": "tg_heat_self","val": 4}],
+    "source": "BIM",
+    "license": "DRAGONFLY",
+    "license_level": 3,
+    "effect": "Choose two allied actors within your Sensor range. Until the start of your next turn, whenever one of those actors would take damage, it gains resistance against that damage, and the second actor takes the other half; this includes Heat damage and damage from Burn. Both actors reduce their armor by 1, to a minimum of 0.",
+    "description": "<i>Expanding upon the quantum technology (and deep prayers of protection) introduced in the Deep Tunnel Scanner, the Hull-Link protocol unites two machines into one under the gaze of Bahamut</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Breacher Momentum",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "BIM",
+    "license": "LEVIATHAN",
+    "license_level": 2,
+    "effect": "If you end your movement at least two spaces away from your starting space, your armor increases by 2 until the start of your next turn. This cannot increase your armor over 4.",
+    "description": "<i>The Leviathan never stops--in part due to this advanced system, recycling kinetic energy from the core’s motive systems into a frontal shield able to protect against some attacks.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Recovery Scoops",
+    "type": "System",
+    "sp": 3,
+    "tags": [{"id": "tg_unique"},{"id": "tg_quick_action"},{"id": "tg_limited","val": "1"}],
+    "source": "BIM",
+    "license": "LEVIATHAN",
+    "license_level": 3,
+    "effect": "You may activate this System as a quick action when you are next to a destroyed non-biological, non-infantry character of at least size ½. At Size ½, you regain one use of a single Limited system. If it is Size 1 or 2, you regain one use of up to two limited systems.  If it is size 3 or more, you regain one use of up to two limited systems and regain 1 repair. You may not use this system to regain its own Limited uses.",
+    "description": "<i>Designed to break Sieges, no matter how long it takes, the Leviathan is capable of devouring the corpses of its foes to replenish its own stores.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Reinforced Structure",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "BIM",
+    "license": "LEVIATHAN",
+    "license_level": 3,
+    "effect": "As long as you have lost at least one Structure, you are immune to the Shredded condition.",
+    "description": "<i>The heart and soul of a machine is what it is built of; Reinforced Structure pledges divinely-inspired (supposedly) materials to the defense of that machine.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "BI Intrusion Software",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "BIM",
+    "license": "SAURUS",
+    "license_level": 3,
+    "effect": "Reduce any Difficulty on an Invasion tech attack by 1, to a minimum of 0.",
+    "description": "<i>Bahamut Industry’s basic intrusion software is designed to work on any mech OS, to pierce through atmospheric beam-scattering, and to be easily customizable to the user’s preference.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "BI Sensorlock Package",
+    "type": "System",
+    "sp": 3,
+    "tags": [],
+    "source": "BIM",
+    "license": "SAURUS",
+    "license_level": 3,
+    "effect": "Whenever you take the Tech action to perform a Bolster or Scan Tech action, you may also take 3 heat to attempt a Lock On or Invade Tech action.",
+    "description": "<i>Enhanced additions to a mech’s normal sensor package, the Sensorlock Package ruggedizes and boosts sensors, allowing them to function in tandem with target-lock systems without interference--though it stresses the power systems of a mech to do so.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Active Probe",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "BIM",
+    "license": "QUETZALCOATL",
+    "license_level": 1,
+    "effect": "Attacks targeting enemy actors within 3 spaces of you gain the arcing tag.",
+    "description": "<i>The Active Probe uses similar technology to the much more focused TAG system, but instead of burning a single target with the eye of the dragon, it spreads its vision around it, resulting in a shorter range but the ability to scan multiple targets.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Improved C3",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "BIM",
+    "license": "QUETZALCOATL",
+    "license_level": 2,
+    "effect": "While an ally is in your Sensor Range, you may use either their Sensor Range or your own for the purposes of Tech actions, and vice versa.",
+    "description": "<i>By linking various sensor networks together with tight-beam laser communications, carefully modulated radio waves, and according to Bahamut Industries ‘advanced prayer protocols’, the machines of a squad of Lancers can link together--each covering the other’s back.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Feathered Serpent Drone Nexus",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [{"id": "tg_drone"},{"id": "tg_quick_action"}],
+    "source": "BIM",
+    "license": "QUETZALCOATL",
+    "license_level": 3,
+    "effect": "You may deploy this Drone to a space within your sensor range as a quick action. It remains active until destroyed, and is automatically recalled at the end of the scene. While it is active, it is considered an ally with a Sensor Range of 5 for all purposes, and all attacks made by allied actors against targets within its sensor range are made with +1 Accuracy.",
+    "description": "<i>A command/control drone, the Feathered Serpent drone nexus provides up to date targeting data in the form of tight-beam ‘prayer engrams’ to a squadron’s tactical network.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {"name": "TEZCATLIPOCA-class NHP",
+    "type": "AI",
+    "sp": 3,
+    "tags": [{"id": "tg_ai"},{"id": "tg_unique"}],
+    "source": "BIM",
+    "license": "QUETZALCOATL",
+    "license_level": 3,
+    "effect": {
+      "effect_type": "AI",
+      "detail": "Your mech gains the AI tag and the TEZCATLIPOCA Protocol.",
+      "abilities": [{
+        "name": "TEZCATLIPOCA Protocol",
+        "effect_type": "Protocol",
+        "detail": "Until the start of your next turn increase the Sensor Range of your mech and all allied actors by 5. Additionally, you and all allied actors gain the following reaction:<br>Smoking MIrror<br>Trigger: An allied actor within 10 spaces declares an attack roll.<br>Give that roll +1 Accuracy. If the allied actor is making a ranged or melee attack, the actor performing this reaction gains 2 Heat.",
+        "tags": [{"id": "tg_heat_self","val": 2}]}]},
+    "description": "No one seems quite sure how the Tezcatlipoca NHP’s thought processes actually function/--I do! But I’m not telling. They dug it up, they can deal with the consequences.--/but Bahamut Industries insists it is perfectly safe and within all the legal limits ascribed to NHPs by Union law. It works with the shell it is on to optimize data transmissions between allies, sorting through streams of data to filter and port them properly regardless of how thick the battlefield becomes with e-war data.<br>TEZCATLIPOCA-class systems tend to have darkened motives and serious personalities, acting as an advisor, but always seeming to believe it is they that are the superior--unless installed in a QUETZALCOATL shell, for reasons the AIs refuse to explain.",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Wyrmcoil Stealth Engine",
+    "type": "System",
+    "sp": 2,
+    "tags": [{"id": "tg_unique"}],
+    "source": "BIM",
+    "license": "WYRM",
+    "license_level": 1,
+    "effect": "You may attempt to Hide without being in cover or concealment, but must succeed at an Agility skill test  to do so. If you do so, you remain hidden despite not being in cover or concealment until you take an action that normally would drop you from the hidden status, though each turn you are not in cover or concealment you must succeed at an Agility roll as a free action at the start of your turn in order to remain Hidden.",
+    "description": "<i>Designed with prayers of stealth and quiet in mind, the Wyrmcoil Stealth Engine is capable of cloaking even the largest machine; not to the extent of the SSC Active Camo system, but effective nonetheless.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Spotter Drone Nexus",
+    "type": "Drone",
+    "sp": 2,
+    "tags": [{"id": "tg_drone"},{"id": "tg_quick_action"}],
+    "source": "BIM",
+    "license": "WYRM",
+    "license_level": 2,
+    "effect": "As a quick action, you may place a Spotter drone within Range 10. As a free action at the end of your turn, the Spotter drone automatically locks on to one random enemy within 5 spaces of it. You may move this drone as a quick action to any point within Range 10 of your mech.",
+    "description": "<i>Spreading Spotter drones gives the Wyrm pilot extensive range; with their digital prayers of accuracy, none are safe from the wroth of bahamut.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "name": "Trajectory Field Modulator",
+    "type": "System",
+    "sp": 2,
+    "tags": [{"id": "tg_protocol"}],
+    "source": "BIM",
+    "license": "WYRM",
+    "license_level": 3,
+    "effect": "At the start of each of your turns, you may gain 2 heat to choose one of the following options, or 4 heat to choose both.<br>Your mech treats no cover as soft cover, and soft cover as hard cover for defensive purposes for the remainder of this round.<br>Gain +1 Accuracy on all Launcher attacks this turn.",
+    "description": "<i>Keeping track of every moving object on the modern battlefield is a minor miracle; the Trajectory Field Modulator manages it, providing highlighted firing arcs--and possible cover the pilot may have otherwise missed.</i>",
+    "data_type": "system",
+    "aptitude": {}
+  }
+]

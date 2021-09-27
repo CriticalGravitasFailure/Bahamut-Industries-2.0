@@ -1,0 +1,399 @@
+[
+    {
+        "source": "BIM",
+        "name": "BROODMOTHER",
+        "image_url": "",
+        "y_position":"50",
+        "mechtype": [
+            "Support","Controller"
+        ],
+        "description":"<i>Bahamut Industry’s premiere Drone chassis, the Broodmother is designated as a Heavy Drone carrier; it more resembles a small factory on legs than a traditional mech. Large and not particularly mobile, nor heavily armed, it relies on it’s drone systems to control the battlefield and protect itself and its allies.</i>",
+        "mounts": [
+            "Main",
+            "Heavy",
+            "Aux/Aux"
+        ],
+        "stats": {
+            "size": 3,
+            "armor": 1,
+            "hp": 10,
+            "evasion": 6,
+            "edef": 8,
+            "heatcap": 7,
+            "repcap": 6,
+            "sensor_range": 10,
+            "tech_attack": 0,
+            "save": 11,
+            "speed": 2,
+            "sp": 7
+        },
+        "traits": [
+            {
+                "name": "Heavy Frame",
+                "description": "The Broodmother cannot be knocked prone by targets smaller than itself"
+            },
+            {
+                "name": "Brood Control",
+                "description": "If the Broodmother attacks with a Nexus system or use a Drone action on its turn, it gains +2 E-Defense (non-cumulative) until the start of its next turn."
+            },
+            {
+                "name": "Slow",
+                "description": "The Broodmother takes +1 difficulty on Agility tests."
+            }
+        ],
+        "core_system": {
+            "name": "BAHAMUT’S AFFECTION",
+            "description": "<i>Bahamut does not merely preach wrath and ruin to his enemies. In his embrace, all things are possible; for he loves you and everyone else and wishes the best upon you.</i>",
+            "active_name": "Release Brood",
+            "active_effect": "The BROODMOTHER starts releasing it's internal brood, an incredibly voracious swarm of drones. The brood is too large and volatile to work with talents, take ammunition, or be modified in any way.To start releasing the swarm is a quick action. Set out a d6, starting at 1. At the start of each of your turns while this weapon system is being released, tick the d6 up by 1, to a maximum of 6. If your mech moves, is stunned, jammed, or is shut down, reset the charge to 1. (This does not stop the charge, however--it continues to tick up at the start of your turns.)Your mech is surrounded by an area of swarming, voracious drones in a Burst with a size equal to the charge die. Enemy units entering the burst or starting their turn in it take a number of 1d6 of AP, untyped damage equal to the number on the charge die. You may additionally choose to inflict this damage to all cover and terrain features within the burst at the start of your turn.",
+            "tags": [
+                {
+                    "id": "tg_quick_action"
+                }
+            ]
+        },
+        "data_type": "frame",
+        "aptitude": {},
+        "counters": [
+            {
+              "id": "ctr_counter_id",
+              "name": "Release Brood",
+              "default_value": 1,
+              "min": 1,
+              "max": 6
+            }
+          ]
+    },
+    {
+        "source": "BIM",
+        "name": "DRACO",
+        "image_url": "",
+        "y_position":"50",
+        "mechtype": [
+            "Striker","Controller"
+        ],
+        "description":"<i>The BIM DRACO was one of the first mechs designed from the alien world's rubble. It is a speedy mech with a focus on incendiary weapons; while it's firepower is nowhere near the GENGHIS', it makes up for that with speed and versatility, as befitting its designated role as a Battlefield Control mech, able to set the world aflame, washing it with holy fire to cleanse the field of battle from the taint of evil.</i>",
+        "mounts": [
+            "Flex",
+            "Flex",
+            "Aux/Aux"
+        ],
+        "stats": {
+            "size": 1,
+            "armor": 0,
+            "hp": 8,
+            "evasion": 10,
+            "edef": 8,
+            "heatcap": 8,
+            "repcap": 5,
+            "sensor_range": 5,
+            "tech_attack": -1,
+            "save": 11,
+            "speed": 5,
+            "sp": 6
+            },
+        "traits": [
+            {
+                "name": "Righteous Flame",
+                "description": "1/Round, the Draco may inflict an additional 1 heat to a target it hits with a weapon attack."
+            },
+            {
+                "name": "Flameshaper",
+                "description": "When The Draco would affect characters in a blast, burst, cone, or line, you may choose up to 4 characters to be unaffected by that zone."
+            }
+        ],
+        "core_system": {
+            "name": "Bahamut’s Cunning",
+            "description": "<i>The Draco shapes the battlefield, but not as an engineer does. They shape it as a predator, a force of nature--rising holy flames to combat the darkness.</i>",
+            "active_name": "Bahamut’s Cunning",
+            "active_effect": "Until the end of the current scene, gain the following Protocol.Select a Blast 1 within Range 5 of you. Until the start of your next turn, that area is now on fire, providing soft cover but not blocking line of sight; actors that start their turn inside of or move inside that area for the first time on their turn take 1 heat and 1 burn, and it provides soft cover. You may take 2 heat when you activate this ability to increase the size to Blast 2, or 4 to increase it to Blast 3. During your turn, you may create a new area as a Quick action, or two areas as a Full action.",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                },
+                {
+                    "id": "tg_heat_self","val": "x"
+                }
+            ]
+            },
+            "data_type": "frame",
+            "aptitude": {}
+            },
+            {
+        "source": "BIM",
+        "name": "DRAGONFLY",
+        "image_url": "",
+        "y_position":"50",
+        "mechtype": [
+            "Support"
+        ],
+        "description":"<i>The BIM DRAGONFLY is a small, swift shell designed for two duties--scouting, and support. It carries a surprisingly massive array of engineering and sensor tools, albeit at the cost of protection… and firepower. Barely armed and hardly armored, it relies on allies and speed to stay safe.</i>",
+        "mounts": [
+            "Main/Aux"
+        ],
+        "stats": {
+            "size": 0.5,
+            "armor": 0,
+            "hp": 8,
+            "evasion": 9,
+            "edef": 9,
+            "heatcap": 6,
+            "repcap": 5,
+            "sensor_range": 10,
+            "tech_attack": 1,
+            "save": 10,
+            "speed": 6,
+            "sp": 8
+        },
+         "traits": [
+            {
+                "name": "Ground-Effect Drive",
+                "description": "Whenever it Boosts, the Dragonfly may fly. It must end its movement on a stable surface; if it does not, it remains in place until the start of its next turn, where its first quick action must be to Boost, and that movement MUST end on a stable surface; if it does not, it falls."
+            },
+            {
+                "name": "Tinker, Tailor, Soldier, Spy",
+                "description": "If the Dragonfly is benefitting from cover when it performs the Stabilize action, it may Hide as a free action."
+            },
+            {
+                "name": "Fragile Plating",
+                "description": "The Dragonfly suffers +1 Difficulty on Hull checks."
+            }
+        ],
+        "core_system": {
+            "name": "Bahamut’s Ingenuity",
+            "description": "<i>Even the smallest can become one of the greatest; for a sharp mind and a glowing soul can hide in the most unassuming packages. For such beings, their mind cuts evil more surely than any blade.</i>",
+            "active_name": "Eye of the Dragon",
+            "active_effect": "When you activate this protocol and at the end of each of your movements, choose one square within your Sensor range. You may measure all ranges from your square or the chosen square.",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                }
+            ]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+        },
+        {
+            "source": "BIM",
+            "name": "LEVIATHAN",
+            "image_url": "",
+            "y_position":"50",
+            "mechtype": [
+                "Defender"
+            ],
+            "description":"<i>A newly released license, the BIM LEVIATHAN is described as a ‘superheavy siegebreaker’ by the company catalogue, and that is very true. It is larger than any other core in their catalogue save for the Broodmother (noted for being a literal walking factory), and while it is massively slow, it is capable of equipping a massive amount of weaponry and armor.</i>",
+            "mounts": [
+                "Heavy",
+                "Main/Aux",
+                "Main/Aux"
+            ],
+            "stats": {
+                 "size": 2,
+                "armor": 0,
+                "hp": 12,
+                "evasion": 5,
+                "edef": 8,
+                "heatcap": 6,
+                "repcap": 6,
+                "sensor_range": 10,
+                "tech_attack": 0,
+                "save": 11,
+                "speed": 3,
+                "sp": 5
+            },
+            "traits": [
+            {
+                    "name": "Heavy Frame",
+                    "description": "The Leviathan cannot be knocked down by targets smaller than itself."
+                },
+                {
+                    "name": "Slow",
+                    "description": " The Leviathan takes +1 difficulty on Agility tests."
+                },
+                {
+                    "name": "Indomitable Tread",
+                    "description": "The Leviathan is immune to the Immobilized and Slowed conditions, as well as to forced movement from any source, including Knockback."
+                },
+                {
+                    "name": "Colossus",
+                    "description": "The Leviathan can be used for hard cover by adjacent allied actors."
+                }
+            ],
+            "core_system": {
+                "name": "Bahamut’s Tenacity",
+                "description": "<i>The Leviathan never stops. It never ceases. It chooses an enemy, and it advances inexorably until that enemy is ground to dust, never to do evil again.</i>",
+                "active_name": "Siege Advance",
+                "active_effect": "For the remainder of the challenge, gain the following Quick Action.<br>Siege Advance<br>Quick Action<br>Move up to half your speed. If you end your movement at least one space away from where you started, you may attack with one mount; if this attack targets cover, a building, a wall, or similar, it deals double damage. This attack does not suffer penalties for the target being in cover.",
+                "tags": [
+                    {
+                        "id": "tg_quick_action"
+                    }
+                ]
+            },
+            "data_type": "frame",
+            "aptitude": {}
+            },
+            {
+                "source": "BIM",
+                "name": "SAURUS",
+                "image_url": "",
+                "y_position":"50",
+                "mechtype": [
+                    "Striker","Artillery"
+                ],
+                "description":"<i>The first mech released by Bahamut Industries, the SAURUS is their premiere battleline mech. It does nothing particularly well; but it is capable of performing nearly any task to acceptable standards, equipped with a wide variety of useful, basic equipment.</i>",
+                "mounts": [
+                    "Flex",
+                    "Main/Aux",
+                    "Main"
+                ],
+                "stats": {
+                    "size": 1,
+                    "armor": 1,
+                    "hp": 10,
+                    "evasion": 8,
+                    "edef": 8,
+                    "heatcap": 7,
+                    "repcap": 4,
+                    "sensor_range": 10,
+                    "tech_attack": 0,
+                    "save": 10,
+                    "speed": 3,
+                    "sp": 6
+                },
+                "traits": [
+                {
+                        "name": "Crusader",
+                        "description": "Whenever the SAURUS attacks, if its attack is of a different type (melee, ranged, or tech) than its last attack, gain +1 flat to the attack roll."
+                    },
+                    {
+                        "name": "Overcharge Loop",
+                        "description": "The first time the SAURUS Overcharges between full repairs, you do not take any heat. The second time, you take 1 Heat; the normal pattern continues from there."
+                    },
+                    {
+                        "name": "Underpowered Targeting Array",
+                        "description": "Whenever the Saurus makes an attack that is the same type as the last attack you made (melee, ranged, or tech), it suffers +1 difficulty."
+                    }
+                ],
+                "core_system": {
+                    "name": "Bahamut’s Rage",
+                    "description": "<i>When all seems lost, the Saurus holds the line; with the rage and fury of Bahamut, it strikes down evil wherever it stands, with whatever tools are necessary.</i>",
+                    "active_name": "Battlefield Eclipse",
+                    "active_effect": "For the rest of the combat, you gain the following action.<br>Battlefield Eclipse<br>Quick Action<br>3 Heat (Self)<br>Take 2 quick actions. These actions may not be the same action, and you may not make a barrage this turn. You may not use this action if you have already used Barrage, and you may not make this action more than once per turn.",
+                    "tags": [
+                        {
+                            "id": "tg_quick_action"
+                        },{"id": "tg_heat_self","val": "3"}
+                    ]
+                },
+                "data_type": "frame",
+                "aptitude": {}
+                },
+                {
+                    "source": "BIM",
+                    "name": "QUETZALCOATL",
+                    "image_url": "",
+                    "y_position":"50",
+                    "mechtype": [
+                        "Artillery","Support"
+                    ],
+                    "description":"<i>Described as a Combat Leadership mech, Bahamut Industries pitches the Quetzalcoatl as a command, communications, and control hub, with AI assistance and rangefinding sources on a mobile, surprisingly resilience frame.</i>",
+                    "mounts": [
+                        "Main/Aux",
+                        "Aux/Aux"
+                    ],
+                    "stats": {
+                        "size": 1,
+                        "armor": 1,
+                        "hp": 8,
+                        "evasion": 9,
+                        "edef": 10,
+                        "heatcap": 4,
+                        "repcap": 5,
+                        "sensor_range": 15,
+                        "tech_attack": 2,
+                        "save": 10,
+                        "speed": 4,
+                        "sp": 8
+                    },
+                    "traits": [
+                    {
+                            "name": "Scales of Resplendency",
+                            "description": "Enemy ranged attacks against the Quetzalcoatl gain +1 Accuracy."
+                        },
+                        {
+                            "name": "Sensor Nexus",
+                            "description": "Allied actors within the Quetzalcoatl’s Sensor Range gain +2 Sensor Range."
+                        },
+                        {
+                            "name": "Data Routing",
+                            "description": "Enemy actors within the Quetzalcoatl’s Sensor Range suffer +1 Difficulty on Tech Attacks."
+                        }
+                    ],
+                    "core_system": {
+                        "name": "Bahamut’s Pride",
+                        "description": "<i>Resplendent and beautiful, the Quetzalcoatl is a winged serpent of myth and legend; the center of any squad, it guides its squadmates with wisdom and foresight in the eradication of evil.</i>",
+                        "active_name": "Bahamut’s Pride",
+                        "active_effect": " For the rest of the battle, you gain the following Quick Action.<br>Resplendency of Winged Prayer<br>Quick Action<br>Every Ally within your Sensor range gains +1 Accuracy on the first roll they make on each of their turns for the rest of the challenge.",
+                        "tags": [
+                            {
+                                "id": "tg_quick_action"
+                            }
+                        ]
+                    },
+                    "data_type": "frame",
+                    "aptitude": {}
+                    },
+                    {
+                        "source": "BIM",
+                        "name": "WYRM",
+                        "image_url": "",
+                        "y_position":"50",
+                        "mechtype": [
+                            "Artillery"
+                        ],
+                        "description":"<i>The Wyrm is a strange combination of specialties; advertised as a stealthy artillery platform, it is capable of hiding nearly as well as the Bahamut Industries Dragonfly, while packing in much more firepower--primarily indirect firepower to support its allies from a distance.</i>",
+                        "mounts": [
+                            "Heavy",
+                            "Aux/Aux"
+                        ],
+                        "stats": {
+                            "size": 1,
+                            "armor": 0,
+                            "hp": 8,
+                            "evasion": 9,
+                            "edef": 7,
+                            "heatcap": 6,
+                            "repcap": 6,
+                            "sensor_range": 10,
+                            "tech_attack": -1,
+                            "save": 11,
+                            "speed": 5,
+                            "sp": 7
+                        },
+                        "traits": [
+                        {
+                                "name": "Precision Systems",
+                                "description": "The Wyrm suffers +1 difficulty on all Systems checks."
+                            },
+                            {
+                                "name": "Bomb-Pumped Bombs",
+                                "description": "Any Blast Launcher fired by the Wyrm may inflict 2 additional self heat to increase it’s Blast by 1."
+                            },
+                            {
+                                "name": "Shimmer-Coil Scales",
+                                "description": "The Wyrm counts as size ½ for benefitting from cover."
+                            }
+                        ],
+                        "core_system": {
+                            "name": "Bahamut’s Wroth",
+                            "description": "<i>The pilots of the Wyrm, contrary to popular belief, do not believe themselves to be Bahamut. They have merely borrowed his ‘Smite’ Button.</i>",
+                            "active_name": "Unleashed Wroth",
+                            "active_effect": " For the rest of this combat, increase the size of Blast Launchers you fire by 1 and gain +1 Accuracy when firing them.",
+                            "tags": []
+                        },
+                        "data_type": "frame",
+                        "aptitude": {}
+                        }
+    
+]

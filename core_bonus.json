@@ -1,0 +1,32 @@
+[
+    {
+        "name": "DRAGON’S EYE",
+        "source": "BIM",
+        "description": "And so the Dragon gazed upon his world",
+        "effect": "As a protocol, you may enhance your sensor suite. If you do, you become Immobilized until the start of your next turn, but increase your sensors by 10 for the same duration."
+    },
+    {
+        "name": "DRAGON’S SCALES",
+        "source": "BIM",
+        "description": "And saw his armor dented, but unbroken",
+        "effect": "Your mech is immune to all environmental heat and burn effects."
+    },
+    {
+        "name": "DRAGON’S ADAPTATION",
+        "source": "BIM",
+        "description": "Knowing he must change, or be changed, he spoke to his followers,",
+        "effect": "Whenever you print your mech, choose one of the following stats: Speed, e-Defense, Evasion, Sensor Range, Heat Capacity, Repair Capacity, Save Target. Increase that stat by 1 until you next reprint your mech."
+    },
+    {
+        "name": "DRAGON’S HOARD",
+        "source": "BIM",
+        "description": "Gather! Gather your men, your mechs, your money! Gather arms and armor, my followers,",
+        "effect": "Your Mech gains 2 additional SP that must be spent on Limited systems."
+    },
+    {
+        "name": "DRAGON’S CRUSADE",
+        "source": "BIM",
+        "description": "For when the Darkness comes again, we will stand ready for the Crusade!",
+        "effect": "Whenever you roll a STRUCTURE or OVERHEATING check, you may skrimish as a reaction before the effects of the check are applied."
+    }
+]
